@@ -1,2 +1,2 @@
-# Silly-Sort
-Silly Sort - A sorting algorithm almost as fast as Quicksort!
+# Sill-Sort
+Sill Sort - A sorting algorithm almost as fast as Quicksort!
