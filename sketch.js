@@ -14,7 +14,7 @@ function setup() {
 function draw() {
   
   for (let i = 0; i < 5; i++) {
-    background(220);
+    background(0);
     displayBars(); // Display the bars
 
     // Perform Sill sort steps
@@ -37,10 +37,10 @@ function draw() {
 function displayBars() {
   for (let i = 0; i < values.length; i++) {
     let barHeight = map(values[i], 0, height, 0, height);
-    stroke(map(values[i], 0, height, 0, 255) * 0.8, map(values[i], 0, height, 0, 255) * 0.8, map(values[i], 0, height, 0, 255) * 0.8);
+    stroke(map(values[i], 0, height, 0, 255) * 1.5, map(values[i], 0, height, 0, 255) * 1.5, map(values[i], 0, height, 0, 255) * 1.5);
     let x = i * barWidth;
     let y = height - barHeight;
-    fill(map(values[i], 0, height, 0, 255) * 0.8, map(values[i], 0, height, 0, 255) * 0.8, map(values[i], 0, height, 0, 255) * 0.8);
+    fill(map(values[i], 0, height, 0, 255) * 1.5, map(values[i], 0, height, 0, 255) * 1.5, map(values[i], 0, height, 0, 255) * 1.5);
     rect(x, y, barWidth, barHeight);
   }
 }
