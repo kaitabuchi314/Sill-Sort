@@ -37,10 +37,10 @@ function draw() {
 function displayBars() {
   for (let i = 0; i < values.length; i++) {
     let barHeight = map(values[i], 0, height, 0, height);
-    stroke(map(values[i], 0, height, 0, 255), map(values[i], 0, height, 0, 255), map(values[i], 0, height, 0, 255));
+    stroke(map(values[i], 0, height, 0, 255) * 0.8, map(values[i], 0, height, 0, 255) * 0.8, map(values[i], 0, height, 0, 255) * 0.8);
     let x = i * barWidth;
     let y = height - barHeight;
-    fill(map(values[i], 0, height, 0, 255), map(values[i], 0, height, 0, 255), map(values[i], 0, height, 0, 255));
+    fill(map(values[i], 0, height, 0, 255) * 0.8, map(values[i], 0, height, 0, 255) * 0.8, map(values[i], 0, height, 0, 255) * 0.8);
     rect(x, y, barWidth, barHeight);
   }
 }
