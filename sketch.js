@@ -17,7 +17,7 @@ function draw() {
     background(220);
     displayBars(); // Display the bars
 
-    // Perform Silly sort steps
+    // Perform Sill sort steps
     if (end <= values.length) {
       let sill = findSill(); // Find the sill (largest element excluding the last one)
       let sillIndex = values.indexOf(sill);
