@@ -37,26 +37,10 @@ function draw() {
 function displayBars() {
   for (let i = 0; i < values.length; i++) {
     let barHeight = map(values[i], 0, height, 0, height);
+    stroke(map(values[i], 0, height, 0, 255), 0, map(values[i] / 2, 0, height, 0, 255));
     let x = i * barWidth;
     let y = height - barHeight;
-
-    // Set the fill color based on the value
-    let fillColor = color(0, 0, 255); // Default color for bars
-    if (i === values.length - 1) {
-      // Set a different color for the sill element
-      fillColor = color(255, 0, 0); // Red color for sill
-    }
-
-    // Set the outline color
-    let outlineColor = color(0); // Default outline color
-    if (i === values.indexOf(findSill())) {
-      // Set a different outline color for the sill element
-      outlineColor = color(255); // White outline for sill
-    }
-
-    // Draw the bar
-    fill(fillColor);
-    stroke(outlineColor);
+    fill(0, 0, 255);
     rect(x, y, barWidth, barHeight);
   }
 }
