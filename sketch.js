@@ -62,13 +62,7 @@ function moveSillToEnd(sillIndex) {
 }
 
 function bubbleSort() {
-  for (let i = values.length - end; i < values.length - 1; i++) {
-    for (let j = values.length - end; j < values.length - 1; j++) {
-      if (values[j] > values[j + 1]) {
-        swap(j, j + 1);
-      }
-    }
-  }
+  
 }
 
 function swap(a, b) {
